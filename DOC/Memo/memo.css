@@ -1,0 +1,197 @@
+body {
+    align-items: center;
+    margin: 0%;
+    background-image: url("https://img.freepik.com/foto-gratis/concepto-memoria-piezas-rompecabezas-cabeza_23-2149320948.jpg?w=1380&t=st=1664881397~exp=1664881997~hmac=5cb7fbd4e71c944d15e4be4e15ac4f1f7bf9ecdc1c69b64e8716e82b3be5558a");
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0%;
+    font-family: Brush Script MT;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+.brain {
+    width: 150px;
+    height: 150px;
+    margin-top: -10%;
+    margin-left: 22%;
+}
+
+.father {
+    width: 75%;
+    margin: auto;
+    margin-top: 0%;
+    margin-left: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepfather {
+    width: 100%;
+    margin: auto;
+    margin-top: 0%;
+    /* margin-bottom: 0%; */
+}
+
+.son {
+    /* height: 80%;
+    width: 60%; */
+    align-items: center;
+    align-self: center;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 3%;
+    /* background-image: url("cardback_6.png") ; */
+    /* margin-right: 3%; */
+}
+
+img {
+    height: 80%;
+    width: 60%;
+}
+
+
+/* .bnone:active {
+    background-image: none;
+} */
+
+#acdiv:active{
+    content:url("cerebro-removebg-preview.png"); 
+    /* height: 80%;
+    width: 60%; */
+    background-position: center;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;      
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* transform: scale(1); */
+    /* background-image: url("cerebro-removebg-preview.png"); */
+    /* -webkit-transform: rotate(360deg);transform: rotate(360deg);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;       
+    transform: rotateY(180deg);
+    transform-style: preserve-3d; */
+}
+/* 
+.imag {
+    box-sizing:border-box;
+    display:block;
+    width: 100%;       
+    height: 100%;    
+    padding-left:115px; 
+    background: url("cardback_6.png")
+}
+
+.imag:active {
+    box-sizing:border-box;
+    display:block;
+    width:100%;        
+    height:100%;       
+    padding-left:115px; 
+    background: url("cerebro-removebg-preview.png");
+    overflow:hidden;
+}  */
+
+
+/* .son:checked {
+    display: block;
+}
+
+.son:not(:checked) {
+    display:none;
+ } */
+
+
+/* input{
+    background-image: url("cardback_6.png");
+    height: 100%;
+    width: 90%;
+} */
+
+/* .div1{
+    margin-top: 5%;
+}
+
+.div2 {
+    margin-top: -50%;
+}
+
+.div3 {
+    margin-top: -50%;
+}
+
+.div4 {
+    margin-top: -50%;
+}
+
+
+.div5{
+    margin-top: 5%;
+}
+
+.div6 {
+    margin-top: -50%;
+}
+
+.div7 {
+    margin-top: -50%;
+}
+
+.div8 {
+    margin-top: -50%;
+}
+
+.div9{
+    margin-top: 5%;
+}
+
+.div10 {
+    margin-top: -50%;
+}
+
+.div11 {
+    margin-top: -50%;
+}
+
+.div12 {
+    margin-top: -50%;
+}
+
+.div13{
+    margin-top: 5%;
+}
+
+.div14 {
+    margin-top: -50%;
+}
+
+.div15 {
+    margin-top: -50%;
+}
+
+.div16 {
+    margin-top: -50%;
+}
+
+.div17{
+    margin-top: 5%;
+}
+
+.div18 {
+    margin-top: -50%;
+}
+
+.div19 {
+    margin-top: -50%;
+}
+
+.div20 {
+    margin-top: -50%;
+} */
