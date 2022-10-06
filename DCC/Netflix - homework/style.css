@@ -1,0 +1,138 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: rgb(23, 23, 23);
+}
+.logo-menu {
+  width: 100%;
+  float: left;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  padding-left: 10px;
+  width: 100%;
+  height: 80px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.c-menu {
+  color: rgba(255, 255, 255, 0.809);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c-menu:hover {
+  text-decoration-color: aliceblue;
+  text-decoration: underline;
+  color: white;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  column-gap: 15px;
+  display: inline-block;
+}
+
+.banner1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.logo-banner {
+  position: absolute;
+  display: flex;
+  width: 35%;
+  height: auto;
+  top: 15%;
+  left: 8%;
+  z-index: 1;
+  opacity: 0.8;
+  margin-bottom: 100px;
+}
+.logo-banner:hover {
+  opacity: 1;
+}
+
+.watch-button {
+  position: absolute;
+  top: 60%;
+  left: 18%;
+  z-index: 2;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.825);
+  height: 40px;
+  width: 180px;
+}
+
+.watch-button:hover {
+  background-color: black;
+  border-color: crimson;
+}
+
+.carrousel {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.item1 {
+  border: 1px rgb(255, 255, 255) solid;
+  max-width: 400px;
+  height: auto;
+  margin-left: 20px;
+  position: relative;
+}
+
+.item1:hover {
+  transform: scale(1.25);
+  border-color: crimson;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.footer-nav{
+ color: aliceblue;
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ background-color: rgba(245, 245, 245, 0.416);
+ padding-top: 20px;
+ padding-bottom: 20px; 
+}
+.fnavli{
+  margin-left: 10px;
+}
+.fnavli:hover{
+  text-decoration: underline;
+  text-decoration-color: crimson;
+  color: crimson;
+  size: 10px;
+}

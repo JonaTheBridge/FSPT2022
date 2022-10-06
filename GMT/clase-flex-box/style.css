@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  /* Define que una caja será flexbox de bloque o flexbox de línea */
+  /* flex | inline-flex */
+  flex-direction: row;
+  /* Define el eje principal (main axis) row - x, column - y */
+  /* row | row-reverse | column | column-reverse */
+  flex-wrap: nowrap;
+  /* Define si la caja flexbox envuelve o NO a sus hijos */
+  /* nowrap | wrap | wrap-reverse */
+  flex-flow: row nowrap;
+  /* Es un shorthand de flex-direction y flex-wrap */
+  justify-content: center;
+  /* Define la alineación de los hijos en el eje principal (main axis) */
+  /* flex-start | center | flex-end | space-between | space-around | space-evenly */
+  align-items: center;
+  /* Define la alineación de los hijos en el eje transversal (cross axis), dentro de cada línea */
+  /* stretch | flex-start | flex-end | center | baseline */
+  align-content: flex-start;
+  /* Define la alineación de los hijos en el eje transversal (cross axis), NO funciona cuando los hijos están en UNA sóla línea (es decir cuando flex-wrap tiene el valor de nowrap, NO FUNCIONA) */
+  /* flex-start | flex-end | center | space-between | space-around | space-evenly | stretch */
+  border: 1px solid black;
+  background-color: #333;
+  min-height: 40vh;
+  width: 100%;
+}
+
+.soy-el-padre-ahora {
+  display: flex;
+  flex-basis: 100%;
+  /* Es el tamaño del elemento hijo dentro de la línea de la caja flexbox
+        Si la caja flexbox tiene dirección de fila, flex-basis representa el width
+        Si la caja flexbox tiene dirección de columna, flex-basis representa el height
+        Valor por defecto auto */
+  align-items: center;
+  height: 60vh;
+}
+
+.flex-items {
+  border: 1px solid green;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #666;
+
+  order: 0;
+  /* Representa el orden que tendrán los elementos hijos en la caja flexbox
+        Valor por defecto 0
+        Se aceptan valores positivos y negativos
+        Un valor menor siempre irá antes que un valor mayor */
+}
+
+.soy-el-padre-ahora div:nth-child(1) {
+  flex-grow: 1;
+  /* Cuando la caja flexbox tenga espacio sobrante, es la habilidad o el factor de crecer, valor por defecto es 0, NO se aceptan valores negativos */
+}
+
+.soy-el-padre-ahora div:nth-child(2) {
+  flex-grow: 2;
+  flex-shrink: 2;
+  /* Cuando la caja flexbox NO tenga espacio sobrante, es la habilidad o el factor de encogerse, valor por defecto es 1, NO se aceptan valores negativos */
+  order: -1;
+}
+
+.soy-el-padre-ahora div:nth-child(3) {
+  flex: 1 1 auto;
+  /* Es un shorthand de las propiedades flex-grow flex-shrink y flex-basis, en ese orden*/
+  align-self: flex-start;
+  /* stretch | flex-start | flex-end | center | baseline */
+  /* Sobreescribe el valor de la propiedad align-items sólo para el elemento hijo especificado */
+}
+
+.soy-el-padre-ahora div:nth-child(4) {
+  flex-grow: 1;
+  align-self: flex-end;
+}
