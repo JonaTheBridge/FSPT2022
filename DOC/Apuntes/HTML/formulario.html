@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="secundario.html" method="POST">
+            <!-- input text with placeholder, que es como un texto de fondo que aparece en el input indicando qué hacer, el texto desaparece al escribir -->
+            <!-- La relación entre en for del label y el id del input es para que cuando pinches en el Nombre (p.ej.) te lleve a su caja. -->
+            <!-- Autofocus es para que te marque donde estás. Si pones varios siempre se irá al primero. -->
+            <!-- Required nos obliga a completar el campo antes de darle a enviar -->
+            <div>
+                <label for="text-id">Nombre*</label>
+                <input autofocus id="text-id" type="text" name="text-name" placeholder="Inserta tu nombre..." required>
+             </div>
+
+            <!-- input text with value -->
+            <!-- POST es para insertar datos y GET para obtenerlos -->
+            <div>
+                <label for="default-text-id">Apellido</label>
+                <input autofocus id="default-text-id" type="text" name="default-text-name" value="Apellido por defecto">
+            </div>
+
+            <!-- Input password -->
+            <div>
+                <label for="password-id">Contraseña</label>
+                <input id="password-id" type="password" name="password" minlength="2" maxlength="5">
+            </div>
+
+            <!-- Input number -->
+            <div>
+                <label for="number-id">Edad</label>
+                <input id="number-id" type="number" name="number-name" step="1" min="-5" max="5">
+            </div>
+
+            <!-- range -->
+            <div>
+                <label for="range-id">Volumen</label>
+                <input id="range-id" type="range" name="range-name" step="3" min="0" max="9">
+            </div>
+            
+            <!-- range with values -->
+            <!-- <div>
+                <label for="range-id">Volumen</label>
+                <input id="range-id" type="range" name="volume" step="3" min="0" max="9" list="range-datalist-id">
+            </div>
+
+            <datalist id="datalist-id">
+                <option value="0" label="min"></option>
+                <option value="3" label="3"></option>
+                <option value="6" label="6"></option>
+                <option value="9" label="max"></option>
+            </datalist> -->
+
+            <!-- checkbox -->
+            <div>
+                <label for="checkbox-id">Tomate</label>
+                <input id="checkbox-id" type="checkbox" name="checkbox-name" value="checkbox-value">
+                <label for="check-id">Lechuga</label>
+                <input id="check-id" type="checkbox" name="check-name" value="check-value">
+            </div>
+
+            <!-- radio -->
+            <div>
+                <p>Elije una opción</p>
+                <label for="radio-yes-id">Si</label>
+                <input id="radio-yes-id" type="radio" name="radio-name" value="yes">
+                <label for="radio-no-id">No</label>
+                <input id="radio-no-id" type="radio" name="radio-name" value="no">
+            </div>
+
+            <div>
+                <p>Estado civil</p>
+                <label for="single">Soltero</label>
+                <input id="single" type="radio" name="civil-name" value="single">
+
+                <label for="married">Casado</label>
+                <input id="married" type="radio" name="civil-name" value="married">
+
+                <label for="widow">Viudo</label>
+                <input id="widow" type="radio" name="civil-name" value="widow">
+            </div>
+            <br>
+            <!-- dropdown / select -->
+            <div>
+                <label for="select-id">Elije una opción</label>
+                <select id="select-id" name="select-name">
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                    <option value="option4">Option4</option>
+                    <option value="option5">Option5</option>
+                </select>
+            </div>
+
+            <br>
+            <!-- datalist -->
+            <div>
+                <label for="color-id">Elije un color</label>
+                <input id="color-id" type="text" name="color-name" list="datalist-id">
+
+                <datalist id="datalist-id">
+                    <option value="amarillo"></option>
+                    <option value="azul"></option>
+                    <option value="blanco"></option>
+                    <option value="gris"></option>
+                    <option value="marron"></option>
+                    <option value="morado"></option>
+                    <option value="naranja"></option>
+                    <option value="negro"></option>
+                    <option value="rojo"></option>
+                    <option value="rosa"></option>
+                    <option value="verde"></option>
+                </datalist>
+            </div>
+
+            <br>
+            <!-- textarea -->
+            <div>
+                <label for="textarea-id">Textarea</label>
+                <br>
+                <textarea id="textarea-id" name="textarea-name" rows="5" cols="10" placeholder="Placeholder">Value</textarea>
+            </div>
+            <br>
+
+            <!-- pattern, en este caso, empieza por 6, continua con nºs del 0 al 9 y el último valor indica que máximo son 8 carácteres + el inicial -->
+            <label for="pattern-id">Pattern ([1-36-7][0-9]{8})</label>
+            <input id="pattern-id" name="pattern-name" type="text" pattern="([1-36-7][0-9]{8})">
+            <br>
+            <br>
+
+            <!-- "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" -->
+            <label for="pattern-id">Pattern [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$</label>
+            <input id="pattern-id" name="pattern-name" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+
+            <!-- button -->
+            <button type="submit">Enviar</button>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>

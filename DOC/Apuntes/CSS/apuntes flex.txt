@@ -1,0 +1,22 @@
+Estas son las propiedades que "yo" (sin ninguna autoridad en la materia) considero que definen básica  perfectamente un objeto en posición y forma. Lo copio y pego como plantilla y puede que os venga bien a vosotros también.  display: flex;
+  float:left;
+  position: fixed;
+  top: 0;
+  left: 0;  justify-content: flex-start;
+  align-items: center;  box-sizing: border-box;
+  width: 100vw;
+  min-width: none;
+  height: 100vh;
+  min-height: none;  background-color: white;
+  margin: 0;
+  border: 0;
+  padding: 0;  align-self: auto;
+  align-content: space-around;  flex-flow: column nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 0;
+  gap: 0;
+
+
+Enviar un mensaje a fullstack-pt-sept22

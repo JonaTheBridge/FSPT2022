@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejemplos de etiquetas html</title>
+  </head>
+  <body>
+    <!-- Headers -->
+    <h1> Soy un H1 </h1>
+    <h2> Soy un H2 </h2>
+    <h3> Soy un H3 </h3>
+    <h4> Soy un H4 </h4>
+    <h5> Soy un H5 </h5>
+    <h6> Soy un H6 </h6>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Divs -->
+    <div> Soy un div </div>
+    <!-- Anidación -->
+    <div>
+      <p>Soy un p dentro de un div</p>
+    </div>
+    <!-- Atributos -->
+    <div id="a">Soy el div con el id = A</div>
+    <div id="b">Soy el div con el id = B</div>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Tags de texto / Paragraphs -->
+    <p>Soy texto en el tag p</p>
+    <p>Soy otro texto en el tag p</p>
+    <!-- Tags de texto / Span -->
+    <span>Soy texto en el tag span</span>
+    <span>Soy otro texto en el tag span</span>
+    <!--  Salto de linea -->
+    <br/> Soy un texto sin etiqueta <br/> Soy otro texto sin etiqueta <br/>
+    <!--  Texto en cursiva -->
+    <em>Texto en cursiva</em>
+    <!--  Texto en negrita -->
+    <strong>Texto en negrita</strong>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Listas desordeadas -->
+    <ul>
+      <li> Rojo </li>
+      <li> Amarillo </li>
+      <li> Verde </li>
+      <li> Azul </li>
+    </ul>
+    <!-- Listas ordeadas -->
+    <ol>
+      <li> Primero </li>
+      <li> Segundo </li>
+      <li> Tercero </li>
+      <li> Cuarto </li>
+    </ol>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Imagen -->
+    <img alt="texto alternativo" src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" />
+
+    <!-- Video simple -->
+    <video width="320" height="240" controls src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4">
+      Video no encontrado
+    </video>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Enlace externo -->
+    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Enlace a Wikipedia</a>
+    <!-- Enlace local --><br/>
+    <a href="./secondary.html">Ir a html secundario</a>
+    <!-- Enlace propio --><br/>
+    <a href="#a">Ir al elemento html con id a</a>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Tablas -->
+    <table border="1"> <!-- deprecated -->
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Header 1</th>
+          <th scope="col">Header 2</th>
+          <th scope="col">Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Row 1</th>
+          <td>Row 1 Data 1</td>
+          <td>Row 1 Data 2</td>
+          <td>Row 1 Data 3</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 2</th>
+          <td colspan="2">Row 2 Data 1 with colspan="2"</td>
+          <td rowspan="2">Row 2 Data 2 with rowspan="2"</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 3</th>
+          <td>Row 3 Data 1</td>
+          <td>Row 3 Data 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- <th scope="row">tds totales</th> -->
+        <td>tds totales</td>
+        <td>7</td>
+      </tfoot>
+    </table>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Formularios -->
+    <form action="secondary.html" method="POST">
+      <!-- input text with placehlder -->
+      <input type="text" name="text-name" placeholder="Insert text...">
+      <!-- input text with value -->
+      <input type="text" name="default-text-name" value="Default value">
+
+      <br>
+      <!-- label -->
+      <label for="user-id">User</label>
+      <input id="user-id" type="text" name="user-name">
+
+      <!-- password -->
+      <label for="pass-id">Pass</label>
+      <input id="pass-id" type="password" name="pass-name">
+
+      <br>
+      <!-- number -->
+      <label for="number-id">Number</label>
+      <input id="number-id" type="number" name="number-name" step="1">
+
+      <!-- range -->
+      <label for="range-id">Range</label>
+      <input id="range-id" name="range-name" type="range" step="10">
+
+      <br>
+      <!-- checkbox -->
+      <p>Marca cualquier casilla</p>
+      <label for="checkbox-id">Checkbox 1</label>
+      <input id="checkbox-id" name="checkbox-name" type="checkbox" value="checkbox-value">
+      <label for="check-id">Checkbox 2</label>
+      <!-- <input id="check-id" name="check-name" type="checkbox" value="check-value"> -->
+      <input id="check-id" name="checkbox-name" type="checkbox" value="check-value">
+
+      <br>
+      <!-- radio -->
+      <p>Elije una opción</p>
+      <input type="radio" id="radio-yes-id" name="radio-name" value="yes">
+      <label for="radio-yes-id">Si</label>
+      <input type="radio" id="radio-no-id" name="radio-name" value="no">
+      <label for="radio-no-id">No</label>
+
+      <br>
+      <!-- dropdown || select -->
+      <label for="select-id">Elije una opción</label>
+      <select id="select-id" name="select-name">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+        <option value="option5">Option 5</option>
+      </select>
+
+      <br>
+      <!-- datalist -->
+      <label for="color-id">Elije un color</label>
+      <input type="text" list="datalist-id" id="color-id" name="color-name">
+
+      <datalist id="datalist-id">
+        <option value="amarillo"></option>
+        <option value="azul"></option>
+        <option value="blanco"></option>
+        <option value="gris"></option>
+        <option value="marron"></option>
+        <option value="morado"></option>
+        <option value="naranja"></option>
+        <option value="negro"></option>
+        <option value="rojo"></option>
+        <option value="rosa"></option>
+        <option value="verde"></option>
+      </datalist>
+
+      <br>
+      <!-- textarea -->
+      <label for="textarea-id">Textarea</label>
+      <br>
+      <textarea id="textarea-id" name="textarea-name" rows="5" cols="30"></textarea>
+
+      <br>
+      <!-- submit -->
+      <!-- <button type="submit">Submit</button> -->
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Validacion de Formularios -->
+    <form action="secondary.html" method="POST">
+      <!-- required -->
+      <label for="required-id">Required</label>
+      <input id="required-id" name="required-name" type="text" required>
+      <br>
+      <!-- min/max number -->
+      <label for="min-max-number-id">Min/max (0/5) Number</label>
+      <input id="min-max-number-id" type="number" name="min-max-number-name" step="1" min="0" max="5">
+      <br>
+      <!-- min/max range -->
+      <label for="min-max-range-id">Max/min (0/100)Range</label>
+      <input id="min-max-range-id" name="min-max-range-name" type="range" step="10" min="0" max="100">
+      <br>
+      <!-- length -->
+      <label for="length-id">Length (2/5)</label>
+      <input id="length-id" name="length-name" type="text" minlength="2" maxlength="5">
+      <br>
+      <!-- pattern -->
+      <label for="pattern-id">Pattern ([6][0-9]{9})</label>
+      <input id="pattern-id" name="pattern-name" type="text" pattern="[6][0-9]{9}">
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Linea separadora -->
+    <hr/>
+
+    <!-- Tags semanticos -->
+    <header></header> <!-- header -->
+    <nav></nav> <!-- nav -->
+
+    <main> <!-- main -->
+      <section> <!-- section -->
+        <article></article> <!-- article -->
+        <article></article>
+        <aside></aside> <!-- aside -->
+      </section>
+      <section>
+        <article></article>
+        <article></article>
+        <aside></aside>
+      </section>
+      <section>
+        <figure> <!-- figure -->
+          <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg">
+          <figcaption>Descripción de pie de foto.</figcaption> <!-- figcaption -->
+        </figure>
+        <audio controls> <!-- source -->
+          <source
+            src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+        <video width="320" height="240" controls>
+          <source src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" type="video/mp4">
+          <source src="https://content.codecademy.com/courses/SemanticHTML/dog-video.ogg" type="video/ogg">
+          Video no encontrado
+        </video>
+         <!-- embed -->
+        <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"/>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+body {
+    height: 65vh;
+    background-color: rgba(102, 102, 102, 0.849);
+}
+
+.father {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont1 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.flag1 {
+    height: 10vh;
+    width: 11%;
+}
+
+.sp1{
+    background-color: red;
+    height: 25.1%;
+}
+
+.sp2{
+    background-color: rgb(201, 201, 3);
+    height: 50%;
+}
+
+.flag2 {
+    height: 10vh;
+    width: 11%;
+}
+
+.ar1{
+    background-color: rgba(54, 193, 236, 0.713);
+    height: 33.9%;
+}
+
+.ar2{
+    background-color: white;
+    height: 33.9%;
+}
+
+.flag3 {
+    height: 10vh;
+    width: 11%;
+}
+
+.ger1 {
+    background-color: black;
+    height: 33.9%;
+}
+
+.ger2 {
+    background-color: red;
+    height: 33.9%;
+}
+
+.ger3 {
+    background-color: rgb(201, 201, 3);
+    height: 33%;
+}
+
+.line2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.flag4 {
+    height: 10vh;
+    width: 11%;
+    display:flex;
+}
+
+.fr1 {
+    background-color: rgb(5, 5, 221);
+    width: 33.9%;
+}
+
+.fr2 {
+    background-color: white;
+    width: 33.9%;
+}
+
+.fr3 {
+    background-color: red;
+    width: 33.9%;
+}
+
+.flag5{
+    height: 10vh;
+    width: 11%;
+    display:flex;
+}
+
+.it1 {
+    background-color: rgba(0, 128, 0, 0.802);
+    width: 33.9%;
+}
+
+.it2 {
+    background-color: white;
+    width: 33.9%;
+}
+
+.it3 {
+    background-color: rgba(255, 0, 0, 0.697);
+    width: 33.9%;
+}
+
+.line3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.flag6{
+    height: 10vh;
+    width: 11%;
+}
+
+.cost1 {
+    background-color: rgb(1, 6, 142);
+    height: 17.5%;
+}
+
+.cost2 {
+    background-color: white;
+    height: 17.5%;
+}
+
+.cost3 {
+    background-color: red;
+    height: 30%;
+}
+
+.flag7 {
+    height: 10vh;
+    width: 11%;
+}
+
+.ara1 {
+    background-color: rgb(209, 209, 2);
+    height: 11.1%;
+}
+
+.ara2 {
+    background-color: rgb(207, 5, 5);
+    height: 11.1%;
+}
+
+.flag8 {
+    height: 10vh;
+    width: 11%;
+    display: flex;
+}
+
+.flag8a {
+    width: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+
+.flag8b {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gui1 {
+    height: 50%;
+    background-color: rgba(255, 166, 0, 0.758);
+}
+
+.gui2 {
+    height: 50%;
+    background-color: green;
+}
+
+.flag9 {
+    height: 10vh;
+    width: 11%;
+    display: flex;
+}
+
+.flag9a {
+    background-color: red;
+    width: 33.9%;
+}
+
+.flag9b {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.emi1 {
+    background-color: rgb(1, 87, 1);
+    height: 33.9%;
+}
+
+.emi2 {
+    background-color: white;
+    height: 33.9%;
+}
+
+.emi3 {
+    background-color: black;
+    height: 33.9%;
+}
+
+.cont2 {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.15;
+}
+
+.line4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flag10 {
+    height: 10vh;
+    width: 65%;
+    background-color: white;
+    
+}
+
+.jap1 {
+    padding-top: 15%;
+    height: 9vh;
+    background-image:radial-gradient(circle, red 33%, white 33%, white);
+}
+
+.flag11 {
+    height: 10vh;
+    width: 65%;
+}
+
+.flagpana1 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.pana1 {
+    width: 50%;
+    background-color: white;
+}
+
+.pana2 {
+    width: 50%;
+    background-color: red;
+}
+
+.flagpana2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.pana3 {
+    width: 50%;
+    background-color: rgb(3, 3, 110);
+}
+
+.pana4 {
+    width: 50%;
+    background-color: white;
+}
+
+.flag12 {
+    background-color: white;
+    height: 10vh;
+    width: 65%;
+    display: flex;
+}
+
+.flagrdom1 {
+    width: 42%;
+}
+
+.rdom1 {
+    background-color: rgb(1, 1, 117);
+    height: 40%;
+}
+
+.rdom2 {
+    height: 20%;
+}
+
+.rdom3 {
+    background-color: red;
+    height: 40%;
+}
+
+.flagrdom2 {
+    width: 16%;
+}
+
+.flagrdom3 {
+    width: 42%;
+    display: flex;
+    flex-direction: column;    
+}
+
+.rdom4 {
+    height: 20%;
+}
+
+.flag13 {
+    height: 10vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flag13a {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.flag13a1 {
+    width: 40%;
+    background-color: blue;
+}
+
+.flag13a2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.eu1a {
+    height: 15%;
+    background-color: red;
+}
+
+.eu2a {
+    height: 15%;
+    background-color: white;
+}
+
+.flag13b {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.flag13b1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eu1b {
+    height: 15%;
+    background-color: red;
+}
+
+.eu2b {
+    height: 15%;
+    background-color: white;
+}
+

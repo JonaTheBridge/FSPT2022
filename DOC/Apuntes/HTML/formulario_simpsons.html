@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Adivina el personaje</title>
+    </head>
+    <body>
+        <center><h1>Completa el formulario y adivina el personaje</h1></center>
+        <br>
+        <form action="personaje.html" method="POST">
+            <!-- Humano -->
+            <div>
+                <p>Ser:</p>
+                <label for="radio-human-id">Humano</label>
+                <input id="radio-human-id" type="radio" name="radio-name" value="human">
+                <label for="radio-dog-id">Perro</label>
+                <input id="radio-dog-id" type="radio" name="radio-name" value="dog">
+                <label for="radio-cat-id">Gato</label>
+                <input id="radio-cat-id" type="radio" name="radio-name" value="cat">
+                <label for="radio-alien-id">Alienígena</label>
+                <input id="radio-alien-id" type="radio" name="radio-name" value="alien">     
+            </div>
+            <!-- Hombre -->
+            <div>
+                <p>Género</p>
+                <label for="radio-man-id">Hombre</label>
+                <input id="radio-man-id" type="radio" name="radio-name" value="man">
+                <label for="radio-woman-id">Mujer</label>
+                <input id="radio-woman-id" type="radio" name="radio-name" value="woman">
+                <label for="radio-nsnc-id">NS/NC</label>
+                <input id="radio-nsnc-id" type="radio" name="radio-name" value="nsnc">
+            </div>
+            <br>
+            <!-- Selma. -->
+            <div>
+                <label for="select-id">Relación con personje</label>
+                <select id="select-id" name="select-name">
+                    <option value="Wiggum">Wiggum</option>
+                    <option value="Selma">Selma</option>
+                    <option value="Smithers">Smithers</option>
+                    <option value="Lionel Hutz">Lionel Hutz</option>
+                    <option value="Barney">Barney</option>
+                </select>
+            </div>
+            <br>
+            <!-- Amarillo -->
+            <div>
+                <label for="color-id">Color de piel</label>
+                <input id="color-id" type="text" name="color-name" list="datalist-id">
+                <datalist id="datalist-id">
+                    <option value="amarillo"></option>
+                    <option value="marrón"></option>
+                    <option value="verde"></option>
+                    <option value="rojo"></option>
+                    <option value="azul"></option>
+                </datalist>
+            </div>
+            <br>
+            <br>
+            <!-- Naranja -->
+            <div>
+                <label for="select-id">Elije el color de su pelo</label>
+                <select id="select-id" name="select-name">
+                    <option value="brown">Marrón</option>
+                    <option value="orange">Naranja</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="blue">Azul</option>
+                    <option value="white">Blanco</option>
+                </select>
+            </div>
+            <br>
+             <!-- Episodio 26, Homer vs.Lisa and the 8th Commandment -->
+             <div>
+                <label for="chapter-id">Selecciona el nº del episodio donde aparece por primera vez:</label>
+                <input id="chapeter-id" type="text" name="chapter-name" list="chapter-id">
+                <datalist id="chapter-id">
+                    <option value="23 - Bart Gets Hit by a Car"></option>
+                    <option value="26 - Homer vs. Lisa and the 8th Commandment"></option>
+                    <option value="30 - Old Money"></option>
+                    <option value="40 - Homer Defined"></option>
+                </datalist>
+            </div>
+            <br>
+            <!-- 40 años -->
+            <div>
+                <label for="number-id">Edad</label>
+                <input id="number-id" type="number" name="number-name" step="1" min="1" max="60">
+            </div>
+            <br>
+            <div>
+                <label for="range-id">Relevancia del personaje en la serie:</label>
+                <input id="range-id" type="range" name="range-name" step="1" min="0" max="10">
+            </div>
+            <br>
+            <!-- Retirado -->
+            <div>
+                <p>¿Está vivo, muerto o retirado?</p>
+                    <label for="alive-id">Vivo</label>
+                    <input id="alive-id" type="checkbox" name="alive-name" value="alive-value">
+                    <label for="death-id">Muerto</label>
+                    <input id="death-id" type="checkbox" name="death-name" value="death-value">
+                    <label for="isolated-id">Retirado</label>
+                    <input id="isolated-id" type="checkbox" name="isolated-name" value="isolated-value">
+            </div>
+            <br>
+            <!-- Actor y presentador de tv -->
+            <div>
+                <p>Selecciona la profesión del personaje:</p>
+                    <label for="cop-id">Policía</label>
+                    <input id="cop-id" type="checkbox" name="cop-name" value="cop-value">
+                    <label for="actor-id">Actor</label>
+                    <input id="actor-id" type="checkbox" name="check-name" value="actor-value">
+                    <label for="teacher-id">Profesor</label>
+                    <input id="teacher-id" type="checkbox" name="teacher-name" value="teacher-value">
+                    <label for="host-id">Presentador de TV</label>
+                    <input id="host-id" type="checkbox" name="host-name" value="host-value">
+                    <label for="waiter-id">Camarero</label>
+                    <input id="waiter-id" type="checkbox" name="waiter-name" value="waiter-value">
+            </div>
+            <br>
+            <br>
+            <!-- Quizá me conozcan de.... -->
+            <div>
+                <label for="phrase-id">Selecciona una frase famosa</label>
+                <select id="phrase-id" name="phrase-name">
+                    <option value="imnot">Yo no he sido.</option>
+                    <option value="death">No lloren por mi, ya estoy muerto.</option>
+                    <option value="film">Quizá me conozcan de películas como...</option>
+                    <option value="stupid">Estúpido flanders y su erotismo.</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="textarea-id">Resultados de los compañeros</label>
+                <br>
+                <br>
+                <textarea id="textarea-id" name="textarea-name" placeholder="Placeholder" rows="10" cols="20">Puntuación:</textarea>
+            </div>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
