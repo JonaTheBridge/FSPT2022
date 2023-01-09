@@ -1,0 +1,166 @@
+/* -------------------- COLOR PALETTE -------------------- */
+$blue: #003049;
+$red: #D62828;
+$orange: #F77F00;
+$yellow: #FCBF49;
+$lightyellow: #EAE2B7;
+
+/* -------------------- SECTIONS SIZES -------------------- */
+$headerHeight: 80px;
+$navHeight: 50px;
+$footerHeight: 50px;
+$mainHeight: calc(100vh - $headerHeight - $navHeight - $footerHeight);
+
+/* -------------------- FONTS -------------------- */
+$rootFontSize: 14px;
+$rootFontFamily: Verdana, Geneva, Tahoma, sans-serif;
+
+/* -------------------- SECTIONS BACKGROUNDS -------------------- */
+$headerBG: $blue;
+$navBG: $red;
+$footerBG: $red;
+$mainBG: $lightyellow;
+$leftPanelBG: $yellow;
+$rightPanelBG: $blue;
+
+/* -------------------- GENERAL SETTINGS -------------------- */
+
+:root {
+  font-size: $rootFontSize;
+  font-family: $rootFontFamily;
+}
+#root {
+  width: 250px;
+}
+* {
+  margin: 0;
+}
+.flx {
+  display: flex;
+  box-sizing: border-box;
+}
+.row {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.col {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+  height: $headerHeight;
+  background: $headerBG;
+  gap: 20px;
+}
+nav {
+  position: relative;
+  width: 100%; 
+  height: $navHeight;
+  background: $navBG;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: $mainHeight;
+  background: $mainBG;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: $footerHeight;
+  background: $footerBG;
+  gap: 20px;
+  color: $lightyellow;
+}
+.left-panel {
+  width: 25%;
+  height: 100%;
+  background-color: $leftPanelBG;
+}
+.right-panel {
+  width: 75%;
+  height: 100%;
+  background-color: $rightPanelBG;
+}
+.character-card {
+  border: 2px solid $red;
+  background: $lightyellow;
+  padding: 10px;
+}
+.character-sprite {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.nav-button {
+  width: 25%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+}
+.nav-button:hover {
+  background: $orange;
+  border: none;
+  font-size: 1.8rem;
+}
+#logo-text {
+  color: $lightyellow;
+  font-size: 2.6rem;
+}
+#logo-img {
+  height: 80%;
+}
+.cell {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: aqua;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: row nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: lightcoral;
+}
+
+.container-shit {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: lightgoldenrodyellow;
+}
+
+.pawn {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background: lightgreen;
+}

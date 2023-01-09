@@ -1,0 +1,51 @@
+$width: 150px;
+$background: rgba($color: #ff6868, $alpha: 1.0);
+$text-color: rgba($color: #ffffff, $alpha: 1.0);
+$font-size: 0.8rem;
+$line-height: 2*$font-size;
+$padding: 10px;
+$border: none;
+$border-radius: 10px;
+$button-background: rgba($color: #ffffff, $alpha: 1.0);
+$button-bg-hover: rgba($color: #b6b6b6, $alpha: 1.0);
+
+.LoginForm {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  background: $background;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+  border: $border;
+  border-radius: $border-radius;
+  text-align: center;
+  padding: $padding;
+}
+
+.LoginForm button {
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  background: $button-background;
+  margin: 5px 0;
+}
+
+.LoginForm button:hover {
+  background: $button-bg-hover;
+  border: none;
+}
+
+.LoginForm input {
+  border: none;
+  padding: 2px 0;
+  font-size: inherit;
+  line-height: 150%;
+  width: 100%;
+  text-indent: 5px;
+}

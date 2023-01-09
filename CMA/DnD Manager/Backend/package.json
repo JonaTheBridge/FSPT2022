@@ -1,0 +1,39 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "my description",
+  "main": "src/main/server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon src/main/server.js",
+    "docs": "jsdoc -c jsdoc.json",
+    "test": "jest --watchAll",
+    "coverage": "jest --watchAll --coverage"
+  },
+  "config": {
+    "port": "3003"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.2",
+    "mongosh": "^0.0.1",
+    "mysql": "^2.18.1",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "cors": "^2.8.5",
+    "jest": "^29.3.1",
+    "jsdoc": "^4.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
